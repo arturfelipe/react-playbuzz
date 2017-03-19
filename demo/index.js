@@ -1,11 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PlayBuzz from '../src/PlayBuzz.jsx';
 
-const render = Component => {
-  ReactDOM.render(
-    <h1>HI</h1>,
-    document.getElementById('root')
-  )
-}
-
-render();
+ReactDOM.render(
+  <PlayBuzz url='http://www.playbuzz.com/peepersc10/who-is-your-favorite-super-hero' />,
+  document.getElementById('root')
+);
