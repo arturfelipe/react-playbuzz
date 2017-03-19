@@ -2,11 +2,12 @@
   "name": "react-playbuzz",
   "version": "0.0.1",
   "description": "React component to render an embeded PlayBuzz game",
-  "main": "index.js",
+  "main": "./dist/react-playbuzz.js",
   "scripts": {
     "start": "node ./demo/server",
     "test": "jest",
-    "lint": "eslint -c .eslintrc.json --ext .jsx --ext .js src"
+    "lint": "eslint -c .eslintrc.json --ext .jsx --ext .js src",
+    "dist": "webpack --config webpack.config.dist.js --optimize-minimize"
   },
   "repository": {
     "type": "git",
