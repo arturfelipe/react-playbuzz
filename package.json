@@ -4,7 +4,9 @@
   "description": "React component to render an embeded PlayBuzz game",
   "main": "index.js",
   "scripts": {
-    "start": "node ./demo/server"
+    "start": "node ./demo/server",
+    "test": "jest",
+    "lint": "eslint --max-warnings 0 -c .eslintrc.json src"
   },
   "repository": {
     "type": "git",
@@ -28,14 +30,17 @@
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "jest": "^19.0.2",
+    "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "enzyme": "^2.7.1",
     "react": "^15.4.2"
   }
 }
