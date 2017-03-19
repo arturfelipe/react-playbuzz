@@ -22,10 +22,6 @@ const PlayBuzz = ({ url, load }) => {
       <div
         className="pb_feed"
         data-game={url}
-        data-recommend="false"
-        data-game-info="false"
-        data-comments="false"
-        data-shares="false"
       />
     </div>
   );

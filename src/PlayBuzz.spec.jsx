@@ -27,4 +27,19 @@ describe('PlayBuzz Component', () => {
     expect(wrapper.exists()).toBe(true);
     expect(wrapper.type()).toBe(null);
   });
+
+  test('render a playbuzz wrapper', () => {
+    const wrapper = setup(sampleUrl);
+    expect(wrapper.find('.playbuzz').exists()).toBe(true);
+  });
+
+  test('render a pb_feed', () => {
+    const wrapper = setup(sampleUrl);
+    expect(wrapper.find('.pb_feed').exists()).toBe(true);
+  });
+
+  test('pb_feed show have a data-game attribute', () => {
+    const wrapper = setup(sampleUrl);
+    expect(wrapper.find('.pb_feed').prop('data-game')).toBe(sampleUrl);
+  });
 });
