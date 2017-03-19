@@ -1,9 +1,20 @@
 import React from 'react';
 
 
-const PlayBuzz = ({ url }) => {
+const loadScript = () => {
+  const script = document.createElement('script');
+  script.src = '//cdn.playbuzz.com/widget/feed.js';
+  script.async = true;
+  document.body.appendChild(script);
+};
+
+const PlayBuzz = ({ url, load }) => {
   if (!url) {
     return null;
+  }
+
+  if (load && !window.PlayBuzz) {
+    loadScript();
   }
 
   return (
@@ -22,6 +33,12 @@ const PlayBuzz = ({ url }) => {
 
 PlayBuzz.propTypes = {
   url: React.PropTypes.string,
+  load: React.PropTypes.bool,
+};
+
+PlayBuzz.defaultProps = {
+  url: '',
+  load: false,
 };
 
 export default PlayBuzz;
