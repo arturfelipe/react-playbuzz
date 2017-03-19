@@ -21,4 +21,10 @@ describe('PlayBuzz Component', () => {
     const wrapper = setup(sampleUrl, true);
     expect(wrapper.exists()).toBe(true);
   });
+
+  test('render nothing when no URL', () => {
+    const wrapper = setup();
+    expect(wrapper.exists()).toBe(true);
+    expect(wrapper.type()).toBe(null);
+  });
 });
