@@ -29,6 +29,10 @@ import PlayBuzz from 'react-playbuzz';
 ReactDOM.render(
   <PlayBuzz
     url='http://www.playbuzz.com/peepersc10/who-is-your-favorite-super-hero'
+    load={true}
+    options={{
+      shares: true
+    }}
   />,
   document.getElementById('root')
 );
@@ -39,10 +43,10 @@ ReactDOM.render(
 | Name      	| Type   	| Description                                                         	| Sample                                                               	| Default 	|
 |-----------	|--------	|---------------------------------------------------------------------	|----------------------------------------------------------------------	|---------	|
 | url       	| string 	| Game URL                                                            	| "http://www.playbuzz.com/peepersc10/who-is-your-favorite-super-hero" 	| ""      	|
-| load      	| bool   	| Load playbuzz script async from `cdn` if it not already in the page 	| true                                                                 	| false   	|
+| load      	| bool   	| Load playbuzz script async from `cdn` if its not already loaded     	| true                                                                 	| false   	|
 | height    	| int    	| Component height in pixels                                          	| 250                                                                  	| null    	|
 | recommend 	| bool   	| Display recommendations for more items                              	| true                                                                 	| false   	|
-| game-info 	| bool   	| Display item info (the thumbnail, name, description and editor)     	| true                                                                 	| false   	|
+| gameInfo 	  | bool   	| Display item info (the thumbnail, name, description and editor)     	| true                                                                 	| false   	|
 | comments  	| bool   	| Use facebook comments                                               	| true                                                                 	| false   	|
 | shares    	| bool   	| Display share buttons (will redirect to your page)                  	| true                                                                 	| false   	|
 
