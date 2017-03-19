@@ -1,6 +1,6 @@
 {
   "name": "react-playbuzz",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React component to render an embeded PlayBuzz game",
   "main": "./dist/react-playbuzz.js",
   "scripts": {
