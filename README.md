@@ -1,4 +1,4 @@
-# react-playbuzz [![Build Status](https://travis-ci.org/arturfelipe/react-playbuzz.svg?branch=master)](https://travis-ci.org/arturfelipe/react-playbuzz) [![codecov](https://codecov.io/gh/arturfelipe/react-playbuzz/branch/master/graph/badge.svg)](https://codecov.io/gh/arturfelipe/react-playbuzz)
+# react-playbuzz [![Build Status](https://travis-ci.org/arturfsousa/react-playbuzz.svg?branch=master)](https://travis-ci.org/arturfsousa/react-playbuzz) [![codecov](https://codecov.io/gh/arturfsousa/react-playbuzz/branch/master/graph/badge.svg)](https://codecov.io/gh/arturfsousa/react-playbuzz)
 
 React component to render an embeded PlayBuzz game. [How to embed a PlayBuzz game](https://publishers.playbuzz.com/academy/how_to/how-do-i-embed/)
 
